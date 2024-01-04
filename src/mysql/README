@@ -1,0 +1,13 @@
+mysql folder 하위 라우터 공통 구조
+
+if(params~) // parameter중 undefined 검열
+    ...
+try{
+    try{
+
+    }catch{
+        ...     // 예측된 케이스 reject
+    }
+}catch{
+    ...     // 예기치 못한 db 에러 로그 남기고 reject
+}
